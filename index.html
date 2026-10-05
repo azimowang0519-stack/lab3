@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3 - Student Showcase Grid</title>
+    <title>Lab 3 - Named Grid Areas</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,51 +18,43 @@
 
         <nav class="nav">
             <ul class="nav-links">
-                <li><a href="#about">01 About Me</a></li>
-                <li><a href="#hobbies">02 Hobbies</a></li>
-                <li><a href="#contact">03 Contact</a></li>
+                <li><a href="#hobby">01 My Hobby</a></li>
+                <li><a href="#place">02 Favorite Place</a></li>
+                <li><a href="#dream">03 My Dream</a></li>
             </ul>
         </nav>
 
         <main class="main">
             <div class="card-grid">
 
-                <article class="card card-featured" id="about">
-                    <p class="label">DEVELOPER PROFILE</p>
-                    <img class="profile" src="images/card0.jpg" alt="Photo of Zimo Wang">
-                    <h2>Hi, I'm Zimo Wang.</h2>
-                    <p>Third-year student at UTM, studying in Digital Enterprise Management Specialist.
-                    <br>Dreaming of being a super star. I love every day.</p>
-                </article>
-
-                <article class="card" id="hobbies">
-                    <img class="card-img" src="images/card1.jpg" alt="Blue sky seen through tree leaves">
-                    <h2>My Hobbies</h2>
-                    <p>Taking photos, traveling and watching TV dramas.</p>
+                <article class="card card-1" id="hobby">
+                    <img src="images/card1.jpg" alt="Blue sky seen through tree leaves">
+                    <h2>My Hobby</h2>
                     <details>
                         <summary>See More</summary>
                         <p>I love taking photos, especially of blue skies and the shade under trees.</p>
-                        <p>Iceland is my favorite place. I have wanted to see the northern lights since I was little.</p>
-                        <p>My dream is to become a TV drama superstar and play a detective on screen.</p>
+                        <p>They always make me feel connected to the world around me.</p>
                     </details>
                 </article>
 
-                <article class="card" id="contact">
-                    <h2>Say Hi</h2>
-                    <p>Leave your name and I'll get back to you.</p>
-                    <form class="contact-form" action="#received">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your name" required>
+                <article class="card" id="place">
+                    <img src="images/card2.jpg" alt="Northern lights over Iceland">
+                    <h2>My Favorite Place</h2>
+                    <details>
+                        <summary>See More</summary>
+                        <p>Iceland is my favorite place in the world.</p>
+                        <p>When I was little, I saw photos of the northern lights online and thought they were so beautiful.</p>
+                    </details>
+                </article>
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your email" required>
-
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="4" placeholder="Your message" required></textarea>
-
-                        <button type="submit">Send</button>
-                    </form>
-                    <p class="received" id="received">Received! Thank you for your message.</p>
+                <article class="card" id="dream">
+                    <img src="images/card3.jpg" alt="A spotlight on a TV drama set">
+                    <h2>My Dream</h2>
+                    <details>
+                        <summary>See More</summary>
+                        <p>My dream is to become a TV drama superstar.</p>
+                        <p>I love watching mystery dramas, and I want to experience solving a case as a detective on screen.</p>
+                    </details>
                 </article>
 
             </div>
