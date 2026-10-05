@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Student Showcase Grid</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-layout">
+
+        <header class="header">
+            <h1>Student Showcase</h1>
+            <p class="byline">by Zimo Wang</p>
+            <div class="stripe"></div>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#about">01 About Me</a></li>
+                <li><a href="#hobbies">02 Hobbies</a></li>
+                <li><a href="#contact">03 Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <div class="card-grid">
+
+                <article class="card card-featured" id="about">
+                    <p class="label">DEVELOPER PROFILE</p>
+                    <img class="profile" src="images/card0.jpg" alt="Photo of Zimo Wang">
+                    <h2>Hi, I'm Zimo Wang.</h2>
+                    <p>Third-year student at UTM, studying in Digital Enterprise Management Specialist.
+                    <br>Dreaming of being a super star. I love every day.</p>
+                </article>
+
+                <article class="card" id="hobbies">
+                    <img class="card-img" src="images/card1.jpg" alt="Blue sky seen through tree leaves">
+                    <h2>My Hobbies</h2>
+                    <p>Taking photos, traveling and watching TV dramas.</p>
+                    <details>
+                        <summary>See More</summary>
+                        <p>I love taking photos, especially of blue skies and the shade under trees.</p>
+                        <p>Iceland is my favorite place. I have wanted to see the northern lights since I was little.</p>
+                        <p>My dream is to become a TV drama superstar and play a detective on screen.</p>
+                    </details>
+                </article>
+
+                <article class="card" id="contact">
+                    <h2>Say Hi</h2>
+                    <p>Leave your name and I'll get back to you.</p>
+                    <form class="contact-form" action="#received">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                    <p class="received" id="received">Received! Thank you for your message.</p>
+                </article>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="stripe"></div>
+            <p>&copy;2026 Student Showcase</p>
+            <p>This is Zimo Wang.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
